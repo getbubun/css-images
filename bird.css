@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+.bird{
+    display: block;
+    height: 150px;
+    width: 100px;
+    background-color: #0089ff;
+    border-radius: 50px 50px 100px 0;
+    transform: rotateZ(30deg);
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    
+}
+
+.bird:before{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 15px solid transparent;
+    border-left: 25px solid #ffca00;
+    transform: rotateZ(-30deg);
+    right: -29px;
+    top: 2px;
+}
+.bird:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    background-color: #006ecd;
+    border-radius: 50px 50px 100px 0;
+    transform: rotateZ(90deg);
+    top: 40px;
+    left: -20px;
+}
+
+.eye{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    right: 25px; 
+}
+.eye:before{
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: #000;
+    border-radius: 10px;
+    position: absolute;
+    top: 4px;
+    right: 1px;
+}
